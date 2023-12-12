@@ -1,22 +1,8 @@
 import React from "react";
 import Product from "./Product";
 
-function ProductList() {
-  let products = [
-    {
-      id: 1,
-      title: "IPhone",
-      description: "It is a brandnew phone",
-      price: "333",
-    },
-    {
-      id: 2,
-      title: "Watch",
-      description: "It is a brandnew watch",
-      price: "100",
-    },
-  ];
-  const addToCart = () => {};
+function ProductList({products, addToCart}) {
+  
   return (
     <div>
       <h2>Product Catalog</h2>
